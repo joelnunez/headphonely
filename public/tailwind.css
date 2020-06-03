@@ -3,4 +3,8 @@
 @tailwind components;
 /* purgecss end ignore */
 
+.translateY {
+  transform: translateY(-200%);
+}
+
 @tailwind utilities;
