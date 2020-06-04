@@ -13,9 +13,9 @@
         <title>Headphonely</title>
       </head>
 
-<body class="font-rubik">
+<body class="font-rubik sm:flex sm:flex-col sm:justify-center sm:items-center sm:w-screen sm:h-screen">
     <!--aside bar-->
-    <aside class="absolute w-full h-screen bg-white z-10 translateY transition-all ease-in-out duration-500" >
+    <aside class="absolute w-full h-screen bg-white z-10 translateY transition-all ease-in-out duration-500 sm:hidden" >
         <div class="w-full h-12 flex items-end justify-end absolute inset-0">
           <svg class="fill-current text-black h-6 w-6 self-end mr-4 close"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.512 224.512"><path d="M224.507 6.997L217.521 0 112.256 105.258 6.998 0 .005 6.997l105.258 105.257L.005 217.512l6.993 7L112.256 119.24l105.265 105.272 6.986-7-105.258-105.258z"/></svg>
         </div>
@@ -32,28 +32,34 @@
         </div>
       </aside>
   <!--nav content-->
-  <nav class="flex items-center h-16 justify-between shadow-lg text-white">
-    <div class="ml-4 flex items-center">
-        <a href="./index.html">
-            <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.833 23.833H11A3.667 3.667 0 007.333 27.5V33A3.667 3.667 0 0011 36.667h1.833A3.667 3.667 0 0016.5 33v-5.5a3.667 3.667 0 00-3.667-3.667zM33 23.833h-1.833A3.667 3.667 0 0027.5 27.5V33a3.667 3.667 0 003.667 3.667H33A3.667 3.667 0 0036.667 33v-5.5A3.667 3.667 0 0033 23.833z" stroke="#1A202C" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.333 27.5V22a14.667 14.667 0 0129.334 0v5.5" stroke="#1A202C" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <span class="ml-2 uppercase tracking-widest text-gray-900">Headphonely</span>
-    </div>
-    <div class="mr-4 active">
+  <nav
+  class="flex items-center h-16 justify-between shadow-xl fixed inset-0"
+>
+  <div class="ml-4 flex items-center">
+    <a href="./index.html">
+      <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.833 23.833H11A3.667 3.667 0 007.333 27.5V33A3.667 3.667 0 0011 36.667h1.833A3.667 3.667 0 0016.5 33v-5.5a3.667 3.667 0 00-3.667-3.667zM33 23.833h-1.833A3.667 3.667 0 0027.5 27.5V33a3.667 3.667 0 003.667 3.667H33A3.667 3.667 0 0036.667 33v-5.5A3.667 3.667 0 0033 23.833z" stroke="#1A202C" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.333 27.5V22a14.667 14.667 0 0129.334 0v5.5" stroke="#1A202C" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <span class="ml-2 uppercase tracking-widest self sm:text-lg sm:font-medium">Headphonely</span>
+  </div>
+  <div class="mr-4 active sm:hidden">
     <svg
-        class="fill-current text-gray-900"
-        height="25"
-        viewBox="0 -53 384 384"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
+      class="fill-current text-gray-900"
+      height="25"
+      viewBox="0 -53 384 384"
+      width="25"
+      xmlns="http://www.w3.org/2000/svg"
     >
-        <path
+      <path
         d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 277.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0"
-        />
+      />
     </svg>
-    </div>
-    <div class="hidden"></div>
-    </nav>
+  </div>
+  <div class="hidden sm:block sm:text-black sm:mr-6 sm:flex sm:items-center sm:justify-center sm:font-medium sm:text-lg uppercase">
+    <a class="sm:px-4 sm:tracking-wider "href="./about.html">About</a>
+    <a class="sm:px-4 sm:tracking-wider "href="./products.html">Products</a>
+    <a class="sm:px-4 sm:tracking-wider "href="./index.html">Home</a>
+  </div>
+</nav>
 <!--section main-->
     <section class="text-gray-900 px-8 text-center">
         <div class="mt-10">
@@ -66,7 +72,7 @@
                 provident delectus neque numquam quod sint beatae similique voluptatem, placeat quisquam.?</p>
         </div>
 
-        <form class="h-full">
+        <form>
             <div>
                 <h2 class=" text-orange-primary mb-6 uppercase font-bold text-xl tracking-wider">STAY CONNECTED</h2>
                 <p class="tracking-wider mb-6">Sign up now to hear about new stories, product drops, collaborations, and
