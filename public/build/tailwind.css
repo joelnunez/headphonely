@@ -627,6 +627,13 @@ video {
   transform: translateY(-200%);
 }
 
+.textarea {
+  min-height: 5rem;
+  max-height: 5rem;
+  min-width: 100%;
+  max-width: 100%;
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
