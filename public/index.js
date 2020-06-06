@@ -18,3 +18,8 @@ close.addEventListener('click', (e) => {
     aside.classList.add('translateY')
   }
 })
+
+//Aos library
+AOS.init({
+  duration: 800,
+})
